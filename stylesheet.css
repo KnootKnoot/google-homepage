@@ -1,0 +1,22 @@
+
+div {
+    display: block;
+}
+
+body {
+    cursor: default;
+    font-size: small;
+    margin: 0;
+    min-height: 100%;
+}
+
+#contents {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#image {
+    height: 92px;
+}
