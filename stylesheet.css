@@ -4,6 +4,7 @@ body {
 }
 
 main {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr;
@@ -20,6 +21,7 @@ main {
 }
 
 #logo {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,13 +36,18 @@ main {
     background-color: blueviolet;
 }
 
-#searchbox-input {
+input[type=text] {
     width: 50%;
     height: 50%;
     font: 400 13.3333px Arial;
     height:40px;
     font-size:14pt;
-    border-radius: 22px;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+input[type=text]:focus::placeholder {
+    color: transparent;
 }
 
 #lower-bar {
