@@ -13,11 +13,10 @@ main {
 }
 
 #top-bar {
-    background-color: bisque;
+    
 }
 
 #contents {
-    background-color: aquamarine;
 }
 
 #logo {
@@ -25,7 +24,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
 }
 
 #searchbox {
@@ -33,7 +31,6 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    background-color: blueviolet;
 }
 
 input[type=text] {
@@ -44,6 +41,10 @@ input[type=text] {
     font-size:14pt;
     border-radius: 22px;
     padding-left: 40px;
+    background: white url(/images/searchicon.png) left no-repeat;
+    background-size: 5%;
+    background-position-x: 7px;
+    background-image: cross-fade();
 }
 
 input[type=text]:focus::placeholder {
@@ -51,7 +52,7 @@ input[type=text]:focus::placeholder {
 }
 
 #lower-bar {
-    background-color: black;
+    
 }
 
 #image {
