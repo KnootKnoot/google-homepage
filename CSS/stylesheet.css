@@ -7,16 +7,17 @@ main {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
     height: 100vh;
 
 }
 
 #top-bar {
-    
+
 }
 
 #contents {
+    margin-top: 150px;
 }
 
 #logo {
@@ -34,17 +35,19 @@ main {
 }
 
 input[type=text] {
-    width: 50%;
-    height: 50%;
+    width: 500px;
     font: 400 13.3333px Arial;
     height:40px;
     font-size:14pt;
     border-radius: 22px;
     padding-left: 40px;
     background: white url(/images/searchicon.png) left no-repeat;
-    background-size: 5%;
+    background-size: 20px;
     background-position-x: 7px;
-    background-image: cross-fade();
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2); 
 }
 
 input[type=text]:focus::placeholder {
@@ -52,9 +55,35 @@ input[type=text]:focus::placeholder {
 }
 
 #lower-bar {
-    
+    background-color: #f2f2f2;
 }
 
 #image {
     height: 92px;
+}
+
+ul {
+    font: 400 13.3333px Arial;
+}
+
+li {
+    display: inline;
+    padding-right: 10px;
+}
+
+button {
+    width: 130px;
+    background-color: #4485f5;
+    color: white;
+    border-style: none;
+    border-radius: 1px;
+    padding: 7px;
+    text-align: center;
+    font: bold;
+}
+
+#appsicon {
+    height: 30px;
+    display: flexbox;
+    padding-top: 10px;
 }
