@@ -1,6 +1,18 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    align-items: center;
 }
 
 main {
@@ -9,10 +21,6 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr 1fr;
     height: 100vh;
-
-}
-
-#top-bar {
 
 }
 
@@ -36,7 +44,6 @@ main {
 
 input[type=text] {
     width: 500px;
-    font: 400 13.3333px Arial;
     height:40px;
     font-size:14pt;
     border-radius: 22px;
@@ -62,13 +69,16 @@ input[type=text]:focus::placeholder {
     height: 92px;
 }
 
-ul {
-    font: 400 13.3333px Arial;
-}
-
 li {
     display: inline;
     padding-right: 10px;
+    list-style: none;
+}
+
+#navlink {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.67);
+    text-decoration: none;
 }
 
 button {
@@ -84,6 +94,5 @@ button {
 
 #appsicon {
     height: 30px;
-    display: flexbox;
-    padding-top: 10px;
+    padding: 10px 0 0 0;
 }

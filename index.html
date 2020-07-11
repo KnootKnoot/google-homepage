@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" >
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="CSS/resetstylesheet.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" media="all"/>
-        <meta charset="utf-8">
+        
+        <title>Google homepage clone</title>
     </head>
     <body>
-        <main>
+        <header>
             <div id="top-bar">
-                <header>
-                    <ul>
-                        <li><a href="">Gmail</a></li>
-                        <li><a href="">Kuvahaku</a></li>
-                        <li><a href=""><img id="appsicon" alt="apps" src="/images/appsicon.png"></a></li>
-                        <button>Kirjaudu sisään</button>
-                    </ul>
-                </header>
+                <ul>
+                    <li><a id="navlink" href="">Gmail</a></li>
+                    <li><a id="navlink" href="">Kuvahaku</a></li>
+                    <li><a id="navlink" href=""><img id="appsicon" alt="apps" src="/images/appsicon.png"></a></li>
+                    <button>Kirjaudu sisään</button>
+                </ul>
             </div>
-    
+        </header>
+        
+
+        <main>
             <div id="contents">
                 <div id="logo">
                     <img id="image" src="/images/GoogleLogo.png" alt="Google logo"> 
@@ -29,12 +34,12 @@
 
                 </div>
             </div>
-    
-            <div id="lower-bar">
-                <footer>
-                    
-                </footer>
-            </div>
         </main> 
+    
+        <footer>
+            <div id="lower-bar">
+
+            </div>
+        </footer>
     </body>
 </html>
